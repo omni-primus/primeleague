@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initinal-scale=1">
+<meta charset="utf-8">
+<title>League Ranks</title>
+<link rel="icon" href="images/logo.png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="stylesheet.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Orbitron|Oswald" rel="stylesheet">
+</head>
+<body>
+<div id="navbar">
+<ul>
+	<li class="dropdown">
+		<a href="index.html" class="dropbtn">Home</a>
+	</li>
+	<li class="dropdown">
+		<a href="PEL2.php" class="dropbtn">PEL</a>
+		<div class="dropdown-content">
+			<a href="javascript:void(0)">Prime Entertainment League. Battle monthly for shiny prices and Prime Points.</a>
+		</div>
+	</li>
+	<li class="dropdown">
+		<a href="Battle-Area.html" class="dropbtn">Gym Battles</a>
+		<div class="dropdown-content">
+			<a href="Battle-Area.html">Here you can Battle Gym Leaders and Elite Four Members<br>
+										(inspired by the real game data).<br>Earn badges and qualify for the Prime League.</a>
+		</div>
+	</li>
+	<li class="dropdown">
+		<a href="league-off.html" class="dropbtn">Prime League</a>
+		<div class="dropdown-content">
+			<a href="league-off.html">Those who own all eight Stage 2 Badges<br>are able to participate in the Prime League <br>
+						to become the Prime League Champion.</a>
+		</div>
+	</li>
+	<li class="dropdown">
+		<a href="database.html" class="dropbtn">Trainer Database</a>
+		<div class="dropdown-content">
+			<a href="database.html">Here you can find all Trainers<br>who are registered in the Prime League<br>and everything we've seen from them so far.</a>
+		</div>
+	</li>
+	<li class="dropdown" style="padding-left:50px;">
+		<a href="test.html" class="signupbtn">Sign Up</a>
+	</li>
+	<li class="dropdown">
+		<a href="login.php" class="signinbtn">Login</a>
+	</li>
+</ul>
+</div>
+
+	<div id="mobile-nav">
+		<a href="index.html" class="topbar" style="padding: 2px 4px; background: rgba(220,160,140,0.0);">
+			<img src="images/Prime-Music-Logo-white-format.png" height="50" width="50">
+		</a>
+		
+		<a href="javascript:void(0);" class="icon" style="float:right" onclick="showmobile()">
+			<i class="fa fa-bars"></i>
+		</a>
+		<a href="registrieren.php" style="float:right" class="signupbtn">Sign Up</a>
+		<a href="login.php" style="float:right" class="signinbtn">Login</a>
+		<div id="Links">
+			<a href="index.html" class="dropbtn">Home</a>
+			<a href="PEL2.php" class="dropbtn">PEL</a>
+			<a href="Battle-Area.html" class="dropbtn">Gym Battles</a>
+			<a href="league-off.html" class="dropbtn">Prime League</a>
+			<a href="database.html" class="dropbtn">Trainer Database</a>
+			</li>
+		</div>
+	</div>
+	
+	<script>
+	function showmobile(){
+		var x = document.getElementById("Links");
+		if(x.style.display === "block"){
+			x.style.display = "none";
+		} else{
+			x.style.display = "block";
+		}
+	}
+	</script>
+
+	<div id="platzhalter"></div>
+		
+		<div id="body-content">
+		<h1 style="margin-top:50px">Introducing: Prime League Ranks and Prime Points </h1><br><br>
+		<img src="images/banner-content2.png" style="width:920px; max-width:100%;"><br><br>
+		
+			<b>Greetings Trainers,</b><br>
+		<p>
+			The title is saying it allready, I introduce a rank system on the website.<br>
+			<br>
+			<h3>What Ranks can I achieve?</h3>
+			There are 5 Ranks right now, Rookie, Silver Elite, Gold Master, Platinum Grandmaster and Rhodium Prestige.<br>
+			You can climb a rank if you achieved enought Prime Points.<br><br>
+		</p>
+		<p>
+			<h3>How do I earn the Ranks?</h3><br>
+			<style>
+				td:hover{
+					background-color: #1C1C1C;
+				}
+				tr:nth-child(even) {background-color: #424242;}
+				th{
+					text-align:center;
+				}
+				#font-rank-name{
+					margin-right:25px;
+					margin-left:25px
+				}
+				
+				@media (max-width: 487px)
+				{
+					#font-rank-name{
+						margin-right:0px;
+						margin-left:0px;
+					}
+				}
+			</style>
+			<table>
+				<tr>
+					<th>
+						<font id="font-rank-name">Rank Name</font>
+					</th>
+					<th>
+						Symbol
+					</th>
+					<th>
+						Requirement
+					</th>
+				</tr>
+				<tr>
+					<td>
+						<center>Rookie</center>
+					</td>
+					<td><img src="images/rank-rookie.png" width="100px" height="100px">
+					</td>
+					<td>
+						Battle at least once in a Gym or in a Tournament.<br>
+						0 - 399 PP
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<center>Silver Elite</center>
+					</td>
+					<td><img src="images/rank-silver.png" width="100px" height="100px">
+					</td>
+					<td>
+						400 - 959 PP
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<center>Gold Master</center>
+					</td>
+					<td><img src="images/rank-gold.png" width="100px" height="100px">
+					</td>
+					<td>
+						960 - 1359 PP
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<center>Platinum Grandmaster</center>
+					</td>
+					<td><img src="images/rank-platin.png" width="100px" height="100px">
+					</td>
+					<td>
+						1360 - 2000 PP 
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<center>Rhodium Prestige</center>
+					</td>
+					<td><img src="images/rank-master.png" width="100px" height="100px">
+					</td>
+					<td>
+						2000 PP+ 
+					</td>
+				</tr>
+			</table>
+		</p>
+		<p><br>
+			<h3>How do I get Prime Points?</h3>
+			Here is a list how and how many PP you can achieve:<br><br>
+			<table>
+				<tr>
+					<th>
+						Section
+					</th>
+					<th>
+						<font style="margin-right:25px;margin-left:25px">Describtion</font>
+					</th>
+					<th>
+						Points
+					</th>
+				</tr>
+				<tr>
+					<td><center><img src="images/gym-sign.png" height="90" width="90" alt="Gym-Logo" title="Gym-Logo" style="margin-bottom:20px;margin-top:20px;"></center></td>
+					<td>
+						<center><br>Earn a Stage 1 Gym Badge<br><br>Earn a Stage 2 Gym Badge</center>
+					</td>
+					<td style="padding-left:30px;"><br>+50 PP<br><br>+70PP</td>
+				</tr>
+				<tr>
+					<td><img src="images/PEL-Logo.png" height="100" width="85" alt="PEL-Logo" title="PEL-Logo"></td>
+					<td>
+						<center><br>1 Win<br><br>1 Lose<br><br>1st Place<br><br>2nd Place</center>
+					</td>
+					<td style="padding-left:30px;padding-right:30px;"><br>+15PP<br><br>-7PP<br><br>50 PP<br><br>30 PP</td>
+					</td>
+				</tr>
+			</table>
+		</p>
+		<p><br>
+			<h3>Where can I see my Rank?</h3>
+			You can see your Rank in the <a href="database.html">Database</a> by searching for your name.
+		</p>
+	</div>
+</div>
+<div id="footer">
+<a class="policy" href="privacy.html">Privacy Policy</a> <a class="policy" id="policy-mitte" href="cookie.html">Cookie Policy</a> <a class="policy" href="terms.html">Terms of Use</a><br><br>
+<img src="images/Prime-Music-Logo-white-format.png" height="100" width="100"><br>
+
+</div>
+</body>
+</html>

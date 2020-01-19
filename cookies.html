@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initinal-scale=1">
+<title>PEL</title>
+<link rel="icon" href="images/logo.png">
+<link href="stylesheet.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Orbitron|Oswald" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
+</script>
+<style>
+h2{
+	text-align:left;
+}
+h3{
+	color:white;
+}
+</style>
+</head>
+<body>
+<div id="navbar">
+<ul>
+	<li class="dropdown">
+		<a href="index.html" class="dropbtn">Home</a>
+	</li>
+	<li class="dropdown">
+		<a href="PEL2.php" class="dropbtn">PEL</a>
+		<div class="dropdown-content">
+			<a href="javascript:void(0)">Prime Entertainment League. Battle monthly for shiny prices and Prime Points.</a>
+		</div>
+	</li>
+	<li class="dropdown">
+		<a href="Battle-Area.html" class="dropbtn">Gym Battles</a>
+		<div class="dropdown-content">
+			<a href="Battle-Area.html">Here you can Battle Gym Leaders and Elite Four Members<br>
+										(inspired by the real game data).<br>Earn badges and qualify for the Prime League.</a>
+		</div>
+	</li>
+	<li class="dropdown">
+		<a href="league-off.html" class="dropbtn">Prime League</a>
+		<div class="dropdown-content">
+			<a href="league-off.html">Those who own all eight Stage 2 Badges<br>are able to participate in the Prime League <br>
+						to become the Prime League Champion.</a>
+		</div>
+	</li>
+	<li class="dropdown">
+		<a href="database.html" class="dropbtn">Trainer Database</a>
+		<div class="dropdown-content">
+			<a href="database.html">Here you can find all Trainers<br>who are registered in the Prime League<br>and everything we've seen from them so far.</a>
+		</div>
+	</li>
+	<li class="dropdown" style="padding-left:50px;">
+		<a href="registrieren.php" class="signupbtn">Sign Up</a>
+	</li>
+	<li class="dropdown">
+		<a href="login.php" class="signinbtn">Login</a>
+	</li>
+</ul>
+</div>
+
+	<div id="mobile-nav">
+		<a href="index.html" class="topbar" style="padding: 2px 4px; background: rgba(220,160,140,0.0);">
+			<img src="images/Prime-Music-Logo-white-format.png" height="50" width="50">
+		</a>
+		
+		<a href="javascript:void(0);" class="icon" style="float:right" onclick="showmobile()">
+			<i class="fa fa-bars"></i>
+		</a>
+		<a href="registrieren.php" style="float:right" class="signupbtn">Sign Up</a>
+		<a href="login.php" style="float:right" class="signinbtn">Login</a>
+		<div id="Links">
+			<a href="index.html" class="dropbtn">Home</a>
+			<a href="PEL2.php" class="dropbtn">PEL</a>
+			<a href="Battle-Area.html" class="dropbtn">Gym Battles</a>
+			<a href="league-off.html" class="dropbtn">Prime League</a>
+			<a href="database.html" class="dropbtn">Trainer Database</a>
+			</li>
+		</div>
+	</div>
+	
+	<script>
+	function showmobile(){
+		var x = document.getElementById("Links");
+		if(x.style.display === "block"){
+			x.style.display = "none";
+		} else{
+			x.style.display = "block";
+		}
+	}
+	</script>
+	
+<div id="platzhalter"></div>
+
+<div id="body-content">
+</div>
+</body>
+</html>
